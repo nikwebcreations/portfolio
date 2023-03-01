@@ -1,0 +1,524 @@
+@font-face {
+    font-family: 'Lato';
+    src: url(../fonts/lato/Lato-Regular.ttf) format("truetype");
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Lato', Georgia, sans-serif;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+a,
+img,
+span,
+button {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.container {
+    min-width: 280px;
+}
+
+:root {
+    --gap: 95px;
+}
+
+.nav__menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #D6D6D6;
+    height: 85px;
+}
+
+.logo {
+    margin-top: 5px;
+    margin-left: 91px;
+}
+
+.nav__header {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0 107px 8px 0;
+    padding: 0;
+}
+
+.nav__list {
+    margin-right: 72px;
+}
+
+.nav__list:last-child {
+    margin-right: 0;
+}
+
+.nav__item {
+    font-family: 'Lato';
+    font-weight: 500;
+    font-size: 20px;
+    color: #292929;
+    text-decoration: none;
+}
+
+.nav__item:hover {
+    color: #01996D;
+    text-decoration: underline;
+    transition: all 0.3s ease;
+}
+
+.nav__buttons {
+    margin-top: -6px;
+    margin-right: 86px;
+}
+
+.nav__sing-in {
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
+    margin-right: 32px;
+}
+
+.nav__sing-in:hover {
+    color: #01996D;
+    transition: all 0.3s ease;
+}
+
+.nav__btn {
+    background: #01996D;
+    border: 1px solid #01996D;
+    border-radius: 4px;
+    padding: 13px 50px
+}
+
+.nav__text-btn {
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.burger {
+    display: none;
+}
+
+.headline__bg-image-1 {
+    background-image: url(../img/radu-florin-CwTBt6jyagQ-unsplash\ 4.png);
+    background-repeat: no-repeat;
+    height: 895px;
+}
+
+.headline__bg-image-2 {
+    background-image: url(../img/radu-florin-CwTBt6jyagQ-unsplash\ 1.png);
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    height: 895px;
+}
+
+.headline__bg-radius {
+    position: relative;
+    height: 895px;
+    background: linear-gradient(112.58deg, #FFFFFF 18.15%, rgba(255, 255, 255, 0) 53.07%), rgba(0, 0, 0, 0.1);
+}
+
+.headline__content {
+    position: absolute;
+    width: 440px;
+    height: 384px;
+    left: 271px;
+    top: 173px;
+}
+
+.headline__title {
+    font-family: 'Georgia';
+    font-weight: 700;
+    font-size: 65px;
+    color: #01996D;
+    margin-bottom: 30px;
+}
+
+.headline__descr {
+    margin: 0 0 18px 0;
+    width: 420px;
+    height: 123px;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 31px;
+    color: #484848;
+}
+
+.headline__btn {
+    width: 227px;
+    height: 65px;
+    background: #01996D;
+    border: 1px solid #01996D;
+    border-radius: 4px;
+}
+
+.headline-btn__link {
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.work__section {
+    margin: 0 auto;
+    width: calc(100% - 529px);
+}
+
+.work__block {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 169px;
+}
+
+.work__block-left {
+    width: 45%;
+}
+
+.work__block-right {
+    width: 55%;
+    padding-top: 58px;
+    padding-left: 110px;
+}
+
+.work__label {
+    font-family: 'Lato';
+    font-weight: 600;
+    font-size: 24px;
+    color: #424242;
+}
+
+.work__title {
+    font-family: 'Georgia';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 157%;
+    color: #01996D;
+
+}
+
+.work__descr {
+    font-family: 'Lato';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #424242;
+}
+
+.work__card {
+    width: calc((100% - (var(--gap) * 2)) / 3);
+    display: flex;
+}
+
+.work__card__01 {
+    margin-right: var(--gap);
+}
+
+.title__card-01 {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.card-01__elem1 {
+    position: absolute;
+    top: -140px;
+    left: 5px;
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 150%;
+    text-align: center;
+    color: rgba(1, 153, 109, 0.2);
+}
+
+.card-01__elem2 {
+    font-family: 'Georgia';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 150%;
+    text-align: center;
+    color: #000000;
+    margin-top: 195px;
+    margin-right: 20px;
+}
+
+.card-01__descr {
+    font-family: 'Lato';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #424242;
+    margin: 55px 0 60px 5px;
+}
+
+.card-01__image {
+    position: relative;
+}
+
+.card-01__img__elem2 {
+    position: absolute;
+    top: 224px;
+    right: 0;
+    background: linear-gradient(122.77deg, rgba(24, 24, 24, 0.2) 2.51%, rgba(196, 196, 196, 0) 95.42%);
+}
+
+.work__card__02 {
+    margin-right: var(--gap);
+}
+
+.title__card-02 {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.card-02__elem1 {
+    position: absolute;
+    top: -140px;
+    left: 5px;
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 150%;
+    text-align: center;
+    color: rgba(1, 153, 109, 0.2);
+}
+
+.card-02__elem2 {
+    font-family: 'Georgia';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 150%;
+    text-align: center;
+    color: #000000;
+    margin-top: 485px;
+    margin-right: -90px;
+}
+
+.card-02__descr {
+    font-family: 'Lato';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #424242;
+    margin: 49px 0 37px 7px;
+}
+
+.title__card-03 {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.card-03__elem1 {
+    position: absolute;
+    top: -135px;
+    left: 13px;
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 150%;
+    text-align: center;
+    color: rgba(1, 153, 109, 0.2);
+}
+
+.card-03__elem2 {
+    font-family: 'Georgia';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 150%;
+    text-align: center;
+    color: #000000;
+    margin-top: 248px;
+    margin-right: 10px;
+}
+
+.card-03__descr {
+    font-family: 'Lato';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #424242;
+    margin: 45px 0 45px 10px;
+}
+
+.card-03__img {
+    margin-left: 13px;
+}
+
+.causes__blocks {
+    display: flex;
+    flex-wrap: wrap;
+    height: 922px;
+    background: #245852;
+    margin-top: 96px;
+}
+
+.causes__left {
+    width: 580px;
+    height: 352px;
+    margin: 310px 0 0 220px;
+}
+
+.causes__h2 {
+    font-family: 'Georgia';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 157%;
+    color: #FFFFFF;
+    margin-bottom: 33px;
+}
+
+.causes__descr {
+    font-family: 'Lato';
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 157%;
+    color: #FFFFFF;
+    margin-bottom: 57px;
+}
+
+.causes__btn {
+    background: #01996D;
+    border: 1px solid #01996D;
+    border-radius: 4px;
+    width: 240px;
+    height: 65px;
+}
+
+.causes__btn-link {
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.causes__right {
+    margin: 229px 0 0 30px;
+}
+
+.product {
+    margin: 0 auto;
+    width: calc(100% - 540px);
+}
+
+.product__block {
+    display: flex;
+    margin-top: 73px;
+}
+
+.product__block-left {
+    margin-left: 61px;
+    position: relative;
+}
+
+.product__image {
+    margin-bottom: 239px;
+}
+
+.product__image-mini {
+    position: absolute;
+    left: -79px;
+    top: 340px;
+}
+
+.product__block-right {
+    margin-left: 77px;
+}
+
+.product__label {
+    font-family: 'Lato';
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 157%;
+    color: #424242;
+    margin-bottom: 10px;
+}
+
+.product__title {
+    font-family: 'Georgia';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 157%;
+    color: #01996D;
+    margin-bottom: 20px;
+}
+
+.product__descr {
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 31px;
+    color: #484848;
+    margin-bottom: 60px;
+}
+
+.product__btn {
+    width: 227px;
+    height: 65px;
+    background: #01996D;
+    border: 1px solid #01996D;
+    border-radius: 4px;
+    margin-left: 9px;
+}
+
+.product__btn-link {
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer {
+    background-color: #245852;
+    height: 654px;
+}
+
+.footer__container {
+    margin-left: 275px;
+}
+
+.footer__logo {
+    margin-bottom: 60px;
+    margin-top: 103px;
+}
+
+.nav__list-footer {
+    margin-bottom: 60px;
+}
+
+.nav__list-footer {
+    list-style: none;
+}
+
+.footer__nav-item {
+    font-family: 'Lato';
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
